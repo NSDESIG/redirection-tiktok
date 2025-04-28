@@ -3,14 +3,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Instructions de redirection →</title>
-  <script>
-    (function(){
-      const ref=(document.referrer||"").toLowerCase();
-      if(!ref.includes("tiktok")){
-        location.replace("https://mcybenjamins.com");
-      }
-    })();
-  </script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
     body{
@@ -69,5 +61,17 @@
       </div>
     </div>
   </div>
+
+  <script>
+    (function(){
+      // Laisser la page d'instructions s'afficher pendant 5 secondes
+      setTimeout(function(){
+        const ref = (document.referrer || "").toLowerCase();
+        if(!ref.includes("tiktok")){
+          location.replace("https://t.me/+Pg8dd7GV2Qc0ZTk0");
+        }
+      }, 5000); // Attendre 5 secondes avant de rediriger
+    })();
+  </script>
 </body>
 </html>
